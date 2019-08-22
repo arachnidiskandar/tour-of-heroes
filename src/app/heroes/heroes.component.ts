@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  heroes: HEROES;
   hero: Hero = {
     id: 1,
     name: 'Arthas'
@@ -15,7 +16,7 @@ export class HeroesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    heroes = HEROES;
+    this.heroes = HEROES;
   }
 
 }
