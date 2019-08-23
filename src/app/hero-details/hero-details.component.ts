@@ -1,3 +1,4 @@
+import { Hero } from './../hero';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
