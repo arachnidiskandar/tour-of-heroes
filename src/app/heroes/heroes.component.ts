@@ -1,4 +1,4 @@
-import { MessageService } from './../services/messages.service';
+import { MessagesService } from './../services/messages.service';
 import { HeroService } from './../services/hero.service';
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
@@ -14,7 +14,7 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
 
-  constructor(private heroService: HeroService, private messageService: MessageService) { }
+  constructor(private heroService: HeroService, private messageService: MessagesService) { }
 
   ngOnInit() {
   }
